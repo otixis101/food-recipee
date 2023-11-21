@@ -33,7 +33,7 @@ export default function Home() {
                       [&:not(:placeholder-shown)]:pb-2
                       autofill:pt-6
                       autofill:pb-2" placeholder="Search for a Recipe" />
-                <a class="absolute top-1 end-1 bottom-1 inline-flex justify-center items-center aspect-square text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition " href="#">
+                <a class="absolute top-1 end-1 bottom-1 inline-flex justify-center items-center aspect-square text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-alternate focus:ring-offset-2 focus:ring-offset-white transition " href="#">
                   <svg class="flex-shrink-0 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
                 </a>
                 <label htmlFor="hs-hero-signup-form-floating-input-last-name" className="absolute top-0 start-0 px-6 py-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  peer-disabled:opacity-50 peer-disabled:pointer-events-none
@@ -53,11 +53,11 @@ export default function Home() {
 
           <div className="relative ms-4">
             <img className="w-full aspect-[1/1.25] rounded-md" src="/hero-image.jpg" alt="Image Description" />
-            <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
+            <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-green-5  0 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"></div>
 
 
             <div className="absolute bottom-0 start-0">
-              <svg className="w-2/3 ms-auto h-auto text-white dark:text-slate-900" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-2/3 ms-auto h-auto text-white" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="531" y="352" width="99" height="99" fill="currentColor" />
                 <rect x="140" y="352" width="106" height="99" fill="currentColor" />
                 <rect x="482" y="402" width="64" height="49" fill="currentColor" />
