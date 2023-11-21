@@ -1,113 +1,198 @@
+import Newsletter from '@/components/Newsletter'
 import Image from 'next/image'
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main >
+
+      <div className="max-w-[85rem] mx-auto px-8 py-12 sm:px-6 lg:px-8">
+
+        <div className="grid md:grid-cols-2 gap-8 md:gap-8 xl:gap-20 md:items-center">
+          <div>
+            <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight ">Discover Culinary Delights from Around the World with <span className="text-primary">Recipee.</span></h1>
+            <p className="mt-3 text-base md:text-lg text-gray-700 ">Passed down Recipes and Secret Formulas from generations... Explore a World of Flavors, One Recipe at a Time.</p>
+
+
+            <div className="mt-7 grid gap-3 w-full sm:inline-flex">
+              <a className="py-5 px-16 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-alternate text-white hover:bg-secondary disabled:opacity-50 disabled:pointer-events-none" href="#">
+                Get Cooking Today
+              </a>
+              {/* <a className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none " href="#">
+                Contact sales team
+              </a> */}
+            </div>
+
+            <div className='my-8 w-full'>
+
+              <div className="relative w-full lg:w-2/3 my-1">
+                <input type="text" id="hs-hero-signup-form-floating-input-last-name" className="peer px-6 py-4 block w-full rounded-full shadow-lg shadow-gray-100 border border-gray-200 text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none 
+                      focus:pt-6
+                      focus:pb-2
+                      [&:not(:placeholder-shown)]:pt-6
+                      [&:not(:placeholder-shown)]:pb-2
+                      autofill:pt-6
+                      autofill:pb-2" placeholder="Search for a Recipe" />
+                <a class="absolute top-1 end-1 bottom-1 inline-flex justify-center items-center aspect-square text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition " href="#">
+                  <svg class="flex-shrink-0 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+                </a>
+                <label htmlFor="hs-hero-signup-form-floating-input-last-name" className="absolute top-0 start-0 px-6 py-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                        peer-focus:text-xs
+                        peer-focus:-translate-y-1.5
+                        peer-focus:text-gray-500
+                        peer-[:not(:placeholder-shown)]:text-xs
+                        peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                        peer-[:not(:placeholder-shown)]:text-gray-500">Find Your Next Favorite Recipe</label>
+              </div>
+              <small className='text-xs text-secondary'>Browse by Cuisine, Dietary Preferences, or Occasion</small>
+            </div>
+
+
+          </div>
+
+
+          <div className="relative ms-4">
+            <img className="w-full rounded-md" src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80" alt="Image Description" />
+            <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
+
+
+            <div className="absolute bottom-0 start-0">
+              <svg className="w-2/3 ms-auto h-auto text-white dark:text-slate-900" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="531" y="352" width="99" height="99" fill="currentColor" />
+                <rect x="140" y="352" width="106" height="99" fill="currentColor" />
+                <rect x="482" y="402" width="64" height="49" fill="currentColor" />
+                <rect x="433" y="402" width="63" height="49" fill="currentColor" />
+                <rect x="384" y="352" width="49" height="50" fill="currentColor" />
+                <rect x="531" y="328" width="50" height="50" fill="currentColor" />
+                <rect x="99" y="303" width="49" height="58" fill="currentColor" />
+                <rect x="99" y="352" width="49" height="50" fill="currentColor" />
+                <rect x="99" y="392" width="49" height="59" fill="currentColor" />
+                <rect x="44" y="402" width="66" height="49" fill="currentColor" />
+                <rect x="234" y="402" width="62" height="49" fill="currentColor" />
+                <rect x="334" y="303" width="50" height="49" fill="currentColor" />
+                <rect x="581" width="49" height="49" fill="currentColor" />
+                <rect x="581" width="49" height="64" fill="currentColor" />
+                <rect x="482" y="123" width="49" height="49" fill="currentColor" />
+                <rect x="507" y="124" width="49" height="24" fill="currentColor" />
+                <rect x="531" y="49" width="99" height="99" fill="currentColor" />
+              </svg>
+            </div>
+
+          </div>
+
         </div>
+
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* Another Section */}
+
+
+
+      <div class="max-w-[85rem] px-8 py-10 sm:px-6 lg:px-8 lg:py-24 mx-auto">
+        <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+          <h2 class="text-2xl font-bold md:text-4xl md:leading-tight ">Delight Your Palate with Our Featured Recipes</h2>
+          <p class="mt-1 text-gray-600 ">From Classic Comforts to Exotic Delicacies, Explore a Feast of Culinary Inspiration</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+
+          <a class="group rounded-xl overflow-hidden" href="#">
+            <div class="sm:flex">
+              <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 start-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description" />
+              </div>
+
+              <div class="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0">
+                <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                  Recipe Name
+                </h3>
+                <p class="mt-3 text-gray-600 ">
+                  Savor the rich flavors of this [type of cuisine] classic. Perfect for [occasion or season]
+                </p>
+                <p class="mt-4 inline-flex items-center gap-x-1 text-blue-600 decoration-2 hover:underline font-medium">
+                  View Recipe
+                  <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                </p>
+              </div>
+            </div>
+          </a>
+
+
+          <a class="group rounded-xl overflow-hidden" href="#">
+            <div class="sm:flex">
+              <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 start-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description" />
+              </div>
+
+              <div class="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0">
+                <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                  Recipe Name
+                </h3>
+                <p class="mt-3 text-gray-600 ">
+                  Savor the rich flavors of this [type of cuisine] classic. Perfect for [occasion or season]
+                </p>
+                <p class="mt-4 inline-flex items-center gap-x-1 text-blue-600 decoration-2 hover:underline font-medium">
+                  View Recipe
+                  <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                </p>
+              </div>
+            </div>
+          </a>
+
+
+          <a class="group rounded-xl overflow-hidden" href="#">
+            <div class="sm:flex">
+              <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 start-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description" />
+              </div>
+
+              <div class="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0">
+                <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                  Recipe Name
+                </h3>
+                <p class="mt-3 text-gray-600 ">
+                  Savor the rich flavors of this [type of cuisine] classic. Perfect for [occasion or season]
+                </p>
+                <p class="mt-4 inline-flex items-center gap-x-1 text-blue-600 decoration-2 hover:underline font-medium">
+                  View Recipe
+                  <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                </p>
+              </div>
+            </div>
+          </a>
+
+
+          <a class="group rounded-xl overflow-hidden" href="#">
+            <div class="sm:flex">
+              <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 start-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description" />
+              </div>
+
+              <div class="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0">
+                <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                  Recipe Name
+                </h3>
+                <p class="mt-3 text-gray-600 ">
+                  Savor the rich flavors of this [type of cuisine] classic. Perfect for [occasion or season]
+                </p>
+                <p class="mt-4 inline-flex items-center gap-x-1 text-blue-600 decoration-2 hover:underline font-medium">
+                  View Recipe
+                  <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                </p>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <Newsletter />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+    </main >
   )
 }
