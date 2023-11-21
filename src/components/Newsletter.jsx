@@ -2,7 +2,7 @@ import React from 'react'
 
 const Newsletter = () => {
   return (
-    <div className="max-w-6xl py-10 px-8 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+    <div className="max-w-6xl py-10 px-8 sm:px-6 lg:px-8 lg:py-16 mx-auto border-t border-gray-300">
         <div className="max-w-xl text-center mx-auto">
             <div className="mb-5">
             <h2 className="text-2xl font-bold md:text-3xl md:leading-tight ">Sign up to our newsletter</h2>

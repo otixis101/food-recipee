@@ -53,7 +53,7 @@ export default function Home() {
 
           <div className="relative ms-4">
             <img className="w-full aspect-[1/1.25] rounded-md" src="/hero-image.jpg" alt="Image Description" />
-            <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-green-5  0 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"></div>
+            <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-green-50 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"></div>
 
 
             <div className="absolute bottom-0 start-0">
@@ -187,7 +187,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center w-full p-8">
-          <a className='text-center block p-4 text-sm rounded-full border cursor-pointer hover:bg-gray-50 hover:text-secondary' href="/recipes">View More</a>
+          <a className='text-center block px-8 py-4 text-sm rounded-full border cursor-pointer hover:bg-gray-50 hover:text-secondary' href="/recipes">View More</a>
         </div>
 
       </div>
